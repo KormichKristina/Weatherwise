@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ABC2BEC-6EC9-49E1-A3FF-EA8723A22393}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Weatherwise</RootNamespace>
+    <AssemblyName>Weatherwise</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCityForm.Designer.cs">
+      <DependentUpon>AddCityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AirPollutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AirPollutionControl.Designer.cs">
+      <DependentUpon>AirPollutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CityControl.Designer.cs">
+      <DependentUpon>CityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AirPollutionData.cs" />
+    <Compile Include="Classes\AirPollutionList.cs" />
+    <Compile Include="Classes\CitiesClass.cs" />
+    <Compile Include="Classes\Coordinates.cs" />
+    <Compile Include="Classes\DailyWeatherForecastInfo.cs" />
+    <Compile Include="Classes\ExtinitionClass.cs" />
+    <Compile Include="Classes\HourlyForecastInfo.cs" />
+    <Compile Include="Classes\MainInfo.cs" />
+    <Compile Include="Classes\MainPollutionData.cs" />
+    <Compile Include="Classes\MyComponents.cs" />
+    <Compile Include="Classes\MyWeather.cs" />
+    <Compile Include="Classes\SettingsClass.cs" />
+    <Compile Include="Classes\SysInfo.cs" />
+    <Compile Include="Classes\WeatherInfo.cs" />
+    <Compile Include="Classes\MyWind.cs" />
+    <Compile Include="CurrentWeatherControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurrentWeatherControl.Designer.cs">
+      <DependentUpon>CurrentWeatherControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExploreControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExploreControl.Designer.cs">
+      <DependentUpon>ExploreControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyForecastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyForecastForm.Designer.cs">
+      <DependentUpon>HourlyForecastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyWeatherControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HourlyWeatherControl.Designer.cs">
+      <DependentUpon>HourlyWeatherControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyWeatherShowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HourlyWeatherShowControl.Designer.cs">
+      <DependentUpon>HourlyWeatherShowControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControl.Designer.cs">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCityForm.resx">
+      <DependentUpon>AddCityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirPollutionControl.resx">
+      <DependentUpon>AirPollutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityControl.resx">
+      <DependentUpon>CityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentWeatherControl.resx">
+      <DependentUpon>CurrentWeatherControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExploreControl.resx">
+      <DependentUpon>ExploreControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyForecastForm.resx">
+      <DependentUpon>HourlyForecastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyWeatherControl.resx">
+      <DependentUpon>HourlyWeatherControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyWeatherShowControl.resx">
+      <DependentUpon>HourlyWeatherShowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsControl.resx">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\AddedCities.txt" />
+    <Content Include="Data\Cities.txt" />
+    <Content Include="Data\SettingsData.txt" />
+    <None Include="Resources\dash.png" />
+    <None Include="Resources\time for settings.png" />
+    <None Include="Resources\thermometer.png" />
+    <None Include="Resources\wind.png" />
+    <None Include="Resources\barometer.png" />
+    <None Include="Resources\precipitation.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\sun.png" />
+    <None Include="Resources\scattered clouds.png" />
+    <None Include="Resources\shower rain.png" />
+    <None Include="Resources\broken clouds.png" />
+    <None Include="Resources\thunderstorm.png" />
+    <None Include="Resources\few clouds.png" />
+    <None Include="Resources\snow.png" />
+    <None Include="Resources\rain.png" />
+    <None Include="Resources\mist.png" />
+    <None Include="Resources\weather-forecast.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\setting %281%29.png" />
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

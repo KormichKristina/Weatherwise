@@ -1,0 +1,4 @@
+°C
+m/c
+hPa
+False
