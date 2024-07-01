@@ -1,4 +1,4 @@
 °C
-m/c
+km/h
 hPa
 False
