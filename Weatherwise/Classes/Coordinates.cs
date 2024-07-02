@@ -10,11 +10,7 @@ namespace Weatherwise.Classes
     {
         public float Lon { get; set; }
         public float Lat { get; set; }
-        public Coordinates(float lot,float lat)
-        {
-            Lon = lot;
-            Lat = lat;
-        }
+        
         
     }
 }
