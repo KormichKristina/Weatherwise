@@ -44,7 +44,6 @@
             this.degLabel.Size = new System.Drawing.Size(33, 22);
             this.degLabel.TabIndex = 1;
             this.degLabel.Text = "Deg";
-            this.degLabel.Click += new System.EventHandler(this.degLabel_Click);
             // 
             // pictureBox1
             // 

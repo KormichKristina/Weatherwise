@@ -48,7 +48,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "HourlyWeatherShowControl";
             this.Size = new System.Drawing.Size(558, 275);
-            this.Load += new System.EventHandler(this.HourlyWeatherShowControl_Load);
             this.ResumeLayout(false);
 
         }

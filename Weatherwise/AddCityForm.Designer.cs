@@ -133,7 +133,6 @@
             this.Name = "AddCityForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCityForm";
-            this.Load += new System.EventHandler(this.AddCityForm_Load);
             this.ResumeLayout(false);
 
         }
