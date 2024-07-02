@@ -1,4 +1,4 @@
-<img src="https://github.com/KormichKristina/Weatherwise/blob/master/imagesForReadme/Weatherwise%20icon.png"/>
+<img heigth=300px src="https://github.com/KormichKristina/Weatherwise/blob/master/imagesForReadme/Weatherwise%20icon.png"/>
 
 ## Weatherwise - небольшое приложение для просмотра прогноза погоды. В основные функции приложения входят просмотр прогноза, просмотр текущей погоды, просмотр уровня рагрязения воздуха.
 
