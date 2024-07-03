@@ -312,8 +312,7 @@ public static class SettingsClass
 {
     public static Degrees TempDegrees {get;set;} \\Размерность градусов
     public static WindSpeed Wind { get; set; }\\Размерность скорости ветра
-    public static Pressure MyPressure { get; set; }
-    \\Размерность давления
+    public static Pressure MyPressure { get; set; }\\Размерность давления
     public static bool UseUtc { get; set; }\\логическая переменная которая указывает, используется ли местное время или время Utc
     public static string MyPathToSettingsData { get; } \\ Путь до файла настроек
     static SettingsClass() \\ статистический конструктор где вычисляется путь до файла настроек и задаются настройки
