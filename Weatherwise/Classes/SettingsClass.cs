@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.SessionState;
 using System.IO;
-using System.Windows.Forms;
-using System.Reflection;
 
 namespace Weatherwise.Classes
 {

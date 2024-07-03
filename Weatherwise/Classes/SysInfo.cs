@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Weatherwise.Classes
 {
-    public struct SysInfo
+    public class SysInfo
     {
         public long Sunrise { get; set; }
         public long Sunset { get; set;}
