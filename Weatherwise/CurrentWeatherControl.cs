@@ -19,7 +19,17 @@ namespace Weatherwise
 
         private void CurrentWeatherControl_Load(object sender, EventArgs e)
         {
-            InitializeForm();
+            try
+            {
+                InitializeForm();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("first connect to the internet!!");
+                Application.Exit();
+            }
+            
             
         }
         public void InitializeForm()
