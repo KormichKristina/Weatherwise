@@ -8,10 +8,7 @@
 <img src="https://github.com/KormichKristina/Weatherwise/blob/master/imagesForReadme/Weatherwise%20preview3.png"/>
 
 ### Как скачать и использовать Weatherwise
-для того чтобы скачать Weatherwise нужно воспользоваться коммандой `git clone` и затем указать URL:<br><br>
-`git clone https://github.com/KormichKristina/Weatherwise.git`<br>
-после того как вы скачали Weatherwise, запустите **Weatherwise.exe**<br><br>
-**Weatherwise.exe** можно найти, следуя этому пути:<br> ..\Weatherwise\Weatherwise\bin\Debug\Weatherwise.exe
+для того чтобы скачать Weatherwise нажмите на <a href="https://drive.google.com/file/d/1-XQbTU4FSiQuaLb_PaNbhHAcEPEnOrju/view?usp=drive_link">ссылку</a> и у вас откроется мой google диск. Далее скачиваете Weatherwise.rar (это может занять достаточно много времени).После того как вы скачали Weatherwise.rar, разархивируйте это приложение и затем следуя пути **.\Weatherwise\Weatherwise\Weatherwise\bin\Debug\Weatherwise.exe** найдите **Weatherwise.exe**
 ***
 ### Какие технологии были использованы
 для красивого оформления приложения было использовано расширение **Guna.UI2.WinForms**. Это расширение позволяет быстро и легко улучшить внешний вид приложения.<br><br>
